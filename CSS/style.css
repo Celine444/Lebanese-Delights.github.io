@@ -1,0 +1,128 @@
+@import url(Componentss/banner.css);
+@import url(Componentss/Button.css);
+@import url(Componentss/menu.css);
+@import url(Componentss/Footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4, h5 {
+    font-size: 1.5em;
+}
+
+.banner {
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #e5c244;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards .card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.container img:last-of-type { 
+    max-width: 100%; 
+    max-height: 400px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin: 20px 0; 
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        padding: 10px 5px;
+    }
+    
+    .cards .card, .container img:last-of-type {
+        width: 100%; 
+    }
+}
